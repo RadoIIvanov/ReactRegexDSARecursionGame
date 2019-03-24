@@ -31,6 +31,7 @@ mongoose.connect(
 let db = mongoose.connection;
 db.on("error", err => console.log(err));
 db.on(`open`, function() {
+  console.log(`successfully connected!! yaya`);
   let DictionaryEntryModel = mongoose.model(
     "DictionaryEntryModel",
     dictionarySchema

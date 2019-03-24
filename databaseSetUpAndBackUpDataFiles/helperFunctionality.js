@@ -137,16 +137,3 @@ const addAnagramsAndPalindromesToDictionary = function(dictionary) {
 };
 
 exports.addAnagramsAndPalindromesToDictionary = addAnagramsAndPalindromesToDictionary;
-
-// importedCombinedPromise.then(function(data) {
-//   let arr = [];
-//   let iterator = data.keys();
-//   let currentKey = "";
-//   while ((currentKey = iterator.next().value)) {
-//     if (palindrome(currentKey)) {
-//       arr.push(currentKey);
-//     }
-//   }
-//   console.log(arr.length);
-//   console.log(arr);
-// });

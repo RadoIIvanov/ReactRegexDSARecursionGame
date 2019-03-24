@@ -1,0 +1,32 @@
+/* properties for elements that are grid containers => 
+display:grid to partition the element into a grid,
+grid-template-rows/columns - to set number of rows and columns and their width, 
+grid-gap: gap between rows gap between columns
+justify-items to specify comprehensive consumption */
+
+/* properties for the items within a grid =>
+grid-row/column: 1 / 4 specifies how many rows/columns a item should consume from the grid (the ratio is starting line - ending line)
+justify or align-self: stretch/start/end/center to specify what part of the grid cell an item should consume (justify/align horizontal/vertical consumption)
+*/
+
+.wrapper {
+  display: grid;
+  justify-items: center;
+}
+
+.nestedWrapper {
+  padding: 0.5px;
+}
+
+.nestedWrapper > * {
+  vertical-align: top;
+}
+
+.cells {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border: 1px solid black;
+  margin: 1px;
+  text-align: center;
+}

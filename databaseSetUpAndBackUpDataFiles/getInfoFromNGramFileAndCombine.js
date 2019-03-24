@@ -3,7 +3,6 @@ const fs = require("fs");
 
 module.exports = validWordsWithScores.then(mapWithScores => {
   return new Promise(resolve => {
-    let mapWithPercentiles = new Map();
     let intermediateStructureObj = {};
     let counterForInterimObj = 0;
 
