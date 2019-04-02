@@ -77,3 +77,32 @@ const populateSquareMatrix = function(matrix, arrOfObjOfData) {
 exports.populateSquareMatrix = populateSquareMatrix;
 
 console.log(populateSquareMatrix(buildSquareMatrix(32), dummyData));
+
+const addPrefixSuffixToAWord = function(prefix, suffix, original) {
+  let somePrefixReversed = somePrefix
+    .split("")
+    .reverse()
+    .join("");
+
+  let arrOfOptions = [];
+
+  let originalCopied = original;
+
+  for (let i = -1; i < somePrefixReversed.length; ++i) {
+    originalCopied = somePrefixReversed.charAt(i) + originalCopied;
+
+    let originalCopiedCopied = originalCopied;
+    for (let j = -1; j < someSuffix.length; ++j) {
+      if (i + j === -2) {
+        continue;
+      }
+      originalCopiedCopied += someSuffix.charAt(j);
+
+      arrOfOptions.push(originalCopiedCopied);
+    }
+  }
+
+  return arrOfOptions;
+};
+
+exports.addPrefixSuffixToAWord = addPrefixSuffixToAWord;

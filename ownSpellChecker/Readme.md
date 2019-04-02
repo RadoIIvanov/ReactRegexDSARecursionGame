@@ -1,4 +1,4 @@
-# Simple spellChecker
+# Simple spellChecker - Overview
 
 Only simple missplellings will be tolerated (i.e. the distance between the wrong spelling and right one must be small). Additionally, the misspelled words will only be counted if :
 
@@ -11,3 +11,9 @@ Types of simple wrong spelling:
 2. Having an unnecessary letter
 3. Having one wrong letter (i.e. same length)
 4. Having the wrong order in adjacent letters (i.e. swapping letters next to each other)
+
+### Process
+
+1. Take the potentially misspelt word and generate all the simple wrong spelling possibilities
+2. Check each of those against the dictionary
+3. Check each of the valid words to see if they fit in the grid
